@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.DATA\\Models\\ControleEmprestimoLivroContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LivrariaControleEmprestimo.DATA\\Models\\ControleEmprestimoLivroContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89357EBB-B991-4434-9DA6-E5CD07073CC5}|LivrariaControleEmprestimo.DATA\\LivrariaControleEmprestimo.DATA.csproj|e:\\users\\g\u00E3o\\source\\repos\\livrariacontroleemprestimo\\livrariacontroleemprestimo.data\\repositories\\repositorylivroclienteemprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89357EBB-B991-4434-9DA6-E5CD07073CC5}|LivrariaControleEmprestimo.DATA\\LivrariaControleEmprestimo.DATA.csproj|solutionrelative:livrariacontroleemprestimo.data\\repositories\\repositorylivroclienteemprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89357EBB-B991-4434-9DA6-E5CD07073CC5}|LivrariaControleEmprestimo.DATA\\LivrariaControleEmprestimo.DATA.csproj|e:\\users\\g\u00E3o\\source\\repos\\livrariacontroleemprestimo\\livrariacontroleemprestimo.data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89357EBB-B991-4434-9DA6-E5CD07073CC5}|LivrariaControleEmprestimo.DATA\\LivrariaControleEmprestimo.DATA.csproj|solutionrelative:livrariacontroleemprestimo.data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89357EBB-B991-4434-9DA6-E5CD07073CC5}|LivrariaControleEmprestimo.DATA\\LivrariaControleEmprestimo.DATA.csproj|e:\\users\\g\u00E3o\\source\\repos\\livrariacontroleemprestimo\\livrariacontroleemprestimo.data\\repositories\\repositorylivro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89357EBB-B991-4434-9DA6-E5CD07073CC5}|LivrariaControleEmprestimo.DATA\\LivrariaControleEmprestimo.DATA.csproj|solutionrelative:livrariacontroleemprestimo.data\\repositories\\repositorylivro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89357EBB-B991-4434-9DA6-E5CD07073CC5}|LivrariaControleEmprestimo.DATA\\LivrariaControleEmprestimo.DATA.csproj|e:\\users\\g\u00E3o\\source\\repos\\livrariacontroleemprestimo\\livrariacontroleemprestimo.data\\repositories\\repositorycliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89357EBB-B991-4434-9DA6-E5CD07073CC5}|LivrariaControleEmprestimo.DATA\\LivrariaControleEmprestimo.DATA.csproj|solutionrelative:livrariacontroleemprestimo.data\\repositories\\repositorycliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 309,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,37 +31,44 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 171,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ControleEmprestimoLivroContext.cs",
-              "DocumentMoniker": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.DATA\\Models\\ControleEmprestimoLivroContext.cs",
-              "RelativeDocumentMoniker": "LivrariaControleEmprestimo.DATA\\Models\\ControleEmprestimoLivroContext.cs",
-              "ToolTip": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.DATA\\Models\\ControleEmprestimoLivroContext.cs",
-              "RelativeToolTip": "LivrariaControleEmprestimo.DATA\\Models\\ControleEmprestimoLivroContext.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAAGIAAABKAAAAAAAAAA==",
+              "Title": "RepositoryLivroClienteEmprestimo.cs",
+              "DocumentMoniker": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.DATA\\Repositories\\RepositoryLivroClienteEmprestimo.cs",
+              "RelativeDocumentMoniker": "LivrariaControleEmprestimo.DATA\\Repositories\\RepositoryLivroClienteEmprestimo.cs",
+              "ToolTip": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.DATA\\Repositories\\RepositoryLivroClienteEmprestimo.cs",
+              "RelativeToolTip": "LivrariaControleEmprestimo.DATA\\Repositories\\RepositoryLivroClienteEmprestimo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T14:19:21.651Z",
+              "WhenOpened": "2025-05-14T17:56:20.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.DATA\\Class1.cs",
-              "RelativeDocumentMoniker": "LivrariaControleEmprestimo.DATA\\Class1.cs",
-              "ToolTip": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.DATA\\Class1.cs",
-              "RelativeToolTip": "LivrariaControleEmprestimo.DATA\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Title": "RepositoryLivro.cs",
+              "DocumentMoniker": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.DATA\\Repositories\\RepositoryLivro.cs",
+              "RelativeDocumentMoniker": "LivrariaControleEmprestimo.DATA\\Repositories\\RepositoryLivro.cs",
+              "ToolTip": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.DATA\\Repositories\\RepositoryLivro.cs",
+              "RelativeToolTip": "LivrariaControleEmprestimo.DATA\\Repositories\\RepositoryLivro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T13:44:22.179Z",
+              "WhenOpened": "2025-05-14T17:54:47.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RepositoryCliente.cs",
+              "DocumentMoniker": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.DATA\\Repositories\\RepositoryCliente.cs",
+              "RelativeDocumentMoniker": "LivrariaControleEmprestimo.DATA\\Repositories\\RepositoryCliente.cs",
+              "ToolTip": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.DATA\\Repositories\\RepositoryCliente.cs",
+              "RelativeToolTip": "LivrariaControleEmprestimo.DATA\\Repositories\\RepositoryCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T17:51:50.627Z",
               "EditorCaption": ""
             }
           ]
