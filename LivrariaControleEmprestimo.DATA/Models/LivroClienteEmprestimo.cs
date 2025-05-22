@@ -7,15 +7,17 @@ public partial class LivroClienteEmprestimo
 {
     public int Id { get; set; }
 
-    public int IdLivro { get; set; }
+    public int? LceIdCliente { get; set; }
 
-    public int IdCliente { get; set; }
+    public int? LceIdLivro { get; set; }
 
-    public DateTime DataEmprestimo { get; set; }
+    public DateTime? LceDataEmprestimo { get; set; }
 
-    public DateTime DataDevolucao { get; set; }
+    public DateTime? LceDataEntrega { get; set; }
 
-    public virtual Cliente IdClienteNavigation { get; set; } = null!;
+    public bool? LceEntregue { get; set; }
 
-    public virtual Livro IdLivroNavigation { get; set; } = null!;
+    public virtual Cliente? LceIdClienteNavigation { get; set; }
+
+    public virtual Livro? LceIdLivroNavigation { get; set; }
 }

@@ -12,3 +12,4 @@ E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo
 E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\obj\Debug\net8.0\LivrariaControleEmprestimo.DATA.pdb
 E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\obj\Debug\net8.0\LivrariaControleEmprestimo.DATA.genruntimeconfig.cache
 E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\obj\Debug\net8.0\ref\LivrariaControleEmprestimo.DATA.dll
+E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.DATA\obj\Debug\net8.0\LivrariaControleEmprestimo.DATA.sourcelink.json

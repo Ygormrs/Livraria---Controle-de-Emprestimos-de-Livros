@@ -7,15 +7,21 @@ public partial class Cliente
 {
     public int Id { get; set; }
 
-    public string Cpf { get; set; } = null!;
+    public string CliCpf { get; set; } = null!;
 
-    public string Nome { get; set; } = null!;
+    public string CliNome { get; set; } = null!;
 
-    public string Endereco { get; set; } = null!;
+    public string CliEndereco { get; set; } = null!;
 
-    public string Cidade { get; set; } = null!;
+    public string CliCidade { get; set; } = null!;
 
-    public string Bairro { get; set; } = null!;
+    public string CliBairro { get; set; } = null!;
+
+    public string CliNumero { get; set; } = null!;
+
+    public string? CliTelefoneCelular { get; set; }
+
+    public string? CliTelefoneFixo { get; set; }
 
     public virtual ICollection<LivroClienteEmprestimo> LivroClienteEmprestimos { get; set; } = new List<LivroClienteEmprestimo>();
 }
