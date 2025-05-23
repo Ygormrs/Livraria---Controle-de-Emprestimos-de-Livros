@@ -31,9 +31,7 @@ public partial class ControleEmprestimoLivroContext : DbContext
         {
             entity.ToTable("Cliente");
 
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.CliBairro)
                 .HasMaxLength(100)
                 .IsUnicode(false)
@@ -72,9 +70,7 @@ public partial class ControleEmprestimoLivroContext : DbContext
         {
             entity.ToTable("Livro");
 
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.LivroAnoPublicacao)
                 .HasColumnType("datetime")
                 .HasColumnName("livroAnoPublicacao");
@@ -100,9 +96,7 @@ public partial class ControleEmprestimoLivroContext : DbContext
         {
             entity.ToTable("Livro_Cliente_Emprestimo");
 
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.LceDataEmprestimo).HasColumnType("datetime");
             entity.Property(e => e.LceDataEntrega).HasColumnType("datetime");
 
