@@ -277,3 +277,11 @@ E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo
 E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\bin\Debug\net8.0\System.Security.Permissions.dll
+E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\bin\Debug\net8.0\System.Windows.Extensions.dll
+E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\Users\Gão\source\repos\LivrariaControleEmprestimo\LivrariaControleEmprestimo.WEB\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
