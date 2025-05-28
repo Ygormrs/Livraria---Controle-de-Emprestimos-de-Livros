@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A3286E1-0790-4636-8679-C619586AA19D}|LivrariaControleEmprestimo.WEB\\LivrariaControleEmprestimo.WEB.csproj|e:\\users\\g\u00E3o\\source\\repos\\livrariacontroleemprestimo\\livrariacontroleemprestimo.web\\views\\cliente\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2A3286E1-0790-4636-8679-C619586AA19D}|LivrariaControleEmprestimo.WEB\\LivrariaControleEmprestimo.WEB.csproj|solutionrelative:livrariacontroleemprestimo.web\\views\\cliente\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{89357EBB-B991-4434-9DA6-E5CD07073CC5}|LivrariaControleEmprestimo.DATA\\LivrariaControleEmprestimo.DATA.csproj|e:\\users\\g\u00E3o\\source\\repos\\livrariacontroleemprestimo\\livrariacontroleemprestimo.data\\models\\livroclienteemprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89357EBB-B991-4434-9DA6-E5CD07073CC5}|LivrariaControleEmprestimo.DATA\\LivrariaControleEmprestimo.DATA.csproj|solutionrelative:livrariacontroleemprestimo.data\\models\\livroclienteemprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A3286E1-0790-4636-8679-C619586AA19D}|LivrariaControleEmprestimo.WEB\\LivrariaControleEmprestimo.WEB.csproj|e:\\users\\g\u00E3o\\source\\repos\\livrariacontroleemprestimo\\livrariacontroleemprestimo.web\\views\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -15,12 +15,20 @@
       "RelativeMoniker": "D:0:0:{2A3286E1-0790-4636-8679-C619586AA19D}|LivrariaControleEmprestimo.WEB\\LivrariaControleEmprestimo.WEB.csproj|solutionrelative:livrariacontroleemprestimo.web\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89357EBB-B991-4434-9DA6-E5CD07073CC5}|LivrariaControleEmprestimo.DATA\\LivrariaControleEmprestimo.DATA.csproj|e:\\users\\g\u00E3o\\source\\repos\\livrariacontroleemprestimo\\livrariacontroleemprestimo.data\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89357EBB-B991-4434-9DA6-E5CD07073CC5}|LivrariaControleEmprestimo.DATA\\LivrariaControleEmprestimo.DATA.csproj|solutionrelative:livrariacontroleemprestimo.data\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A3286E1-0790-4636-8679-C619586AA19D}|LivrariaControleEmprestimo.WEB\\LivrariaControleEmprestimo.WEB.csproj|e:\\users\\g\u00E3o\\source\\repos\\livrariacontroleemprestimo\\livrariacontroleemprestimo.web\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A3286E1-0790-4636-8679-C619586AA19D}|LivrariaControleEmprestimo.WEB\\LivrariaControleEmprestimo.WEB.csproj|solutionrelative:livrariacontroleemprestimo.web\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3286E1-0790-4636-8679-C619586AA19D}|LivrariaControleEmprestimo.WEB\\LivrariaControleEmprestimo.WEB.csproj|e:\\users\\g\u00E3o\\source\\repos\\livrariacontroleemprestimo\\livrariacontroleemprestimo.web\\views\\cliente\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3286E1-0790-4636-8679-C619586AA19D}|LivrariaControleEmprestimo.WEB\\LivrariaControleEmprestimo.WEB.csproj|solutionrelative:livrariacontroleemprestimo.web\\views\\cliente\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A3286E1-0790-4636-8679-C619586AA19D}|LivrariaControleEmprestimo.WEB\\LivrariaControleEmprestimo.WEB.csproj|e:\\users\\g\u00E3o\\source\\repos\\livrariacontroleemprestimo\\livrariacontroleemprestimo.web\\views\\cliente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A3286E1-0790-4636-8679-C619586AA19D}|LivrariaControleEmprestimo.WEB\\LivrariaControleEmprestimo.WEB.csproj|solutionrelative:livrariacontroleemprestimo.web\\views\\cliente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89357EBB-B991-4434-9DA6-E5CD07073CC5}|LivrariaControleEmprestimo.DATA\\LivrariaControleEmprestimo.DATA.csproj|e:\\users\\g\u00E3o\\source\\repos\\livrariacontroleemprestimo\\livrariacontroleemprestimo.data\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89357EBB-B991-4434-9DA6-E5CD07073CC5}|LivrariaControleEmprestimo.DATA\\LivrariaControleEmprestimo.DATA.csproj|solutionrelative:livrariacontroleemprestimo.data\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,12 +51,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LivroClienteEmprestimo.cs",
+              "DocumentMoniker": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.DATA\\Models\\LivroClienteEmprestimo.cs",
+              "RelativeDocumentMoniker": "LivrariaControleEmprestimo.DATA\\Models\\LivroClienteEmprestimo.cs",
+              "ToolTip": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.DATA\\Models\\LivroClienteEmprestimo.cs",
+              "RelativeToolTip": "LivrariaControleEmprestimo.DATA\\Models\\LivroClienteEmprestimo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T21:35:36.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.WEB\\Views\\Cliente\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LivrariaControleEmprestimo.WEB\\Views\\Cliente\\Edit.cshtml",
+              "ToolTip": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.WEB\\Views\\Cliente\\Edit.cshtml",
+              "RelativeToolTip": "LivrariaControleEmprestimo.WEB\\Views\\Cliente\\Edit.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAF8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-28T19:52:54.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Details.cshtml",
               "DocumentMoniker": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.WEB\\Views\\Cliente\\Details.cshtml",
               "RelativeDocumentMoniker": "LivrariaControleEmprestimo.WEB\\Views\\Cliente\\Details.cshtml",
               "ToolTip": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.WEB\\Views\\Cliente\\Details.cshtml",
               "RelativeToolTip": "LivrariaControleEmprestimo.WEB\\Views\\Cliente\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-27T16:47:58.11Z",
               "EditorCaption": ""
@@ -61,14 +95,14 @@
               "RelativeDocumentMoniker": "LivrariaControleEmprestimo.WEB\\Views\\Cliente\\Create.cshtml",
               "ToolTip": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.WEB\\Views\\Cliente\\Create.cshtml",
               "RelativeToolTip": "LivrariaControleEmprestimo.WEB\\Views\\Cliente\\Create.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-23T16:14:11.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ClienteService.cs",
               "DocumentMoniker": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.DATA\\Services\\ClienteService.cs",
               "RelativeDocumentMoniker": "LivrariaControleEmprestimo.DATA\\Services\\ClienteService.cs",
@@ -87,20 +121,20 @@
               "RelativeDocumentMoniker": "LivrariaControleEmprestimo.WEB\\Views\\Cliente\\Index.cshtml",
               "ToolTip": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.WEB\\Views\\Cliente\\Index.cshtml",
               "RelativeToolTip": "LivrariaControleEmprestimo.WEB\\Views\\Cliente\\Index.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADAAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-23T15:31:22.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.WEB\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "LivrariaControleEmprestimo.WEB\\Controllers\\ClienteController.cs",
               "ToolTip": "E:\\Users\\G\u00E3o\\source\\repos\\LivrariaControleEmprestimo\\LivrariaControleEmprestimo.WEB\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "LivrariaControleEmprestimo.WEB\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwD0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T15:29:23.232Z",
               "EditorCaption": ""

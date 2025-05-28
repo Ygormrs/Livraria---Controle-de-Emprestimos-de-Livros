@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace LivrariaControleEmprestimo.DATA.Models;
 
@@ -11,8 +12,10 @@ public partial class LivroClienteEmprestimo
 
     public int? LceIdLivro { get; set; }
 
+    [DisplayName("Data Empréstimo")]
     public DateTime? LceDataEmprestimo { get; set; }
 
+    [DisplayName("Data Entrega")]
     public DateTime? LceDataEntrega { get; set; }
 
     public bool? LceEntregue { get; set; }
