@@ -17,7 +17,7 @@ public partial class Livro
     [DisplayName("Editora")]
     public string LivroEditora { get; set; } = null!;
 
-    [DisplayName("Ano de Puiblicação")]
+    [DisplayName("Ano de Publicação")]
     public DateTime LivroAnoPublicacao { get; set; }
 
     [DisplayName("Edição")]
