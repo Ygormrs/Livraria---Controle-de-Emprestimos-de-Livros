@@ -1,0 +1,61 @@
+## Build directories
+bin/
+obj/
+artifacts/
+Debug/
+Release/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.dbmdl
+
+## Visual Studio project files
+.vs/
+.vscode/
+*.csproj.user
+
+## Razor specific
+Generated\_Files/
+*.g.cs
+*.g.i.cs
+*.cshtml.cs (if auto-generated)
+
+## Entity Framework
+*.edmx*
+*.edmx.diagram
+*.edmx.sql
+*.tt
+*.ttinclude
+*.efdesigner.cs
+
+## NuGet packages
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+*.snupkg
+
+## Logs and environment
+*.log
+*.env
+*.env.*
+
+## System / OS files
+.DS_Store
+Thumbs.db
+
+## Rider / JetBrains
+.idea/
+*.sln.iml
+
+## Others
+*.cache
+*.pdb
+*.pidb
+*.sdf
+*.tmp
+*.bak
+*.db
