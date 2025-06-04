@@ -1,0 +1,60 @@
+﻿@model LivrariaControleEmprestimo.DATA.Models.Livro
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Livro</h4>
+    <hr />
+    <div>
+        <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model?.Id">Alterar</a>
+        <a class="btn btn-primary" asp-action="Index">Voltar</a>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">Detalhes do Livro</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6 mt-2">
+                    <div class="form-group">
+                        <label>@Html.DisplayNameFor(model => model.LivroNome)</label>
+                        <input type="text" class="form-control" disabled value="@Html.DisplayFor(model => model.LivroNome)" />
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-6 mt-2">
+                    <div class="form-group">
+                        <label>@Html.DisplayNameFor(model => model.LivroAutor)</label>
+                        <input type="text" class="form-control" disabled value="@Html.DisplayFor(model => model.LivroAutor)" />
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-6 mt-2">
+                    <div class="form-group">
+                        <label>@Html.DisplayNameFor(model => model.LivroEditora)</label>
+                        <input type="text" class="form-control" disabled value="@Html.DisplayFor(model => model.LivroEditora)" />
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-6 mt-2">
+                    <div class="form-group">
+                        <label>@Html.DisplayNameFor(model => model.LivroAnoPublicacao)</label>
+                        <input type="text" class="form-control" disabled value="@Html.DisplayFor(model => model.LivroAnoPublicacao)" />
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <div class="form-group">
+                        <label>@Html.DisplayNameFor(model => model.LivroEdicao)</label>
+                        <input type="text" class="form-control" disabled value="@Html.DisplayFor(model => model.LivroEdicao)" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+

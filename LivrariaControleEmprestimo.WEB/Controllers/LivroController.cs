@@ -18,5 +18,39 @@ namespace LivrariaControleEmprestimo.WEB.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Create(Livro model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
+            _livroService._repositoryLivro.Incluir(model);
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Details(int id)
+        {
+            Livro oLivro = _livroService._repositoryLivro.SelecionarPk(id);
+            return View(oLivro);
+        }
+
+        public IActionResult Edit(int id)
+        {
+            Livro oLivro = _livroService._repositoryLivro.SelecionarPk(id);
+            return View(oLivro);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Livro model)
+        {
+            Livro oLivro = _livroService._repositoryLivro.Alterar(model);
+            int id = oLivro.Id;
+
+            return RedirectToAction("Details", new { id });
+        }
     }
 }
