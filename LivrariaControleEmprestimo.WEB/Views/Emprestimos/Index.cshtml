@@ -1,31 +1,34 @@
-﻿@model IEnumerable<LivrariaControleEmprestimo.DATA.Models.Livro>
+﻿@model IEnumerable<LivrariaControleEmprestimo.DATA.Models.VwLivroClienteEmprestimo>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Livros</h1>
+<h1>Index</h1>
 
 <p>
-    <a class="btn btn-primary" asp-action="Create">Adicionar Livro</a>
+    <a asp-action="Create">Create New</a>
 </p>
 <table id="myTable" class="table">
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.CliCpf)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CliNome)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.LivroNome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LivroAutor)
+                @Html.DisplayNameFor(model => model.LceDataEmprestimo)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LivroEditora)
+                @Html.DisplayNameFor(model => model.LceDataEntrega)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LivroAnoPublicacao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LivroEdicao)
+                @Html.DisplayNameFor(model => model.LceEntregue)
             </th>
             <th></th>
         </tr>
@@ -34,19 +37,22 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.CliCpf)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CliNome)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.LivroNome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.LivroAutor)
+                @Html.DisplayFor(modelItem => item.LceDataEmprestimo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.LivroEditora)
+                @Html.DisplayFor(modelItem => item.LceDataEntrega)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.LivroAnoPublicacao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LivroEdicao)
+                @Html.DisplayFor(modelItem => item.LceEntregue)
             </td>
                 <td>
                     <a asp-action="Edit" class="btn btn-success" asp-route-id="@item.Id">Alterar</a>

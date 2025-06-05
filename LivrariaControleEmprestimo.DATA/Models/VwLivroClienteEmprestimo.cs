@@ -4,8 +4,17 @@ using System.ComponentModel;
 
 namespace LivrariaControleEmprestimo.DATA.Models;
 
-public partial class LivroClienteEmprestimo
+public partial class VwLivroClienteEmprestimo
 {
+    [DisplayName("CPF")]
+    public string CliCpf { get; set; } = null!;
+
+    [DisplayName("Nome do Cliente")]
+    public string CliNome { get; set; } = null!;
+
+    [DisplayName("Nome do Livro")]
+    public string LivroNome { get; set; } = null!;
+
     public int Id { get; set; }
 
     public int? LceIdCliente { get; set; }
@@ -15,12 +24,8 @@ public partial class LivroClienteEmprestimo
     [DisplayName("Data de Empréstimo")]
     public DateTime? LceDataEmprestimo { get; set; }
 
-    [DisplayName("Data Entrega")]
+    [DisplayName("Data de Entrega")]
     public DateTime? LceDataEntrega { get; set; }
 
     public bool? LceEntregue { get; set; }
-
-    public virtual Cliente? LceIdClienteNavigation { get; set; }
-
-    public virtual Livro? LceIdLivroNavigation { get; set; }
 }

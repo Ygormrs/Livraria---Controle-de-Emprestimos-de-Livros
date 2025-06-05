@@ -21,6 +21,8 @@ public partial class ControleEmprestimoLivroContext : DbContext
 
     public virtual DbSet<LivroClienteEmprestimo> LivroClienteEmprestimos { get; set; }
 
+    public virtual DbSet<VwLivroClienteEmprestimo> VwLivroClienteEmprestimos { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=DESKTOP-5VTI9UI\\SQLSERVER2022;Database=ControleEmprestimoLivro;Integrated Security=True;TrustServerCertificate=True;");
@@ -107,6 +109,29 @@ public partial class ControleEmprestimoLivroContext : DbContext
             entity.HasOne(d => d.LceIdLivroNavigation).WithMany(p => p.LivroClienteEmprestimos)
                 .HasForeignKey(d => d.LceIdLivro)
                 .HasConstraintName("FK_Livro_Cliente_Emprestimo_Livro1");
+        });
+
+        modelBuilder.Entity<VwLivroClienteEmprestimo>(entity =>
+        {
+            entity
+                //.HasNoKey()
+                .ToView("VW_Livro_Cliente_Emprestimo");
+
+            entity.Property(e => e.CliCpf)
+                .HasMaxLength(14)
+                .IsUnicode(false)
+                .HasColumnName("cliCPF");
+            entity.Property(e => e.CliNome)
+                .HasMaxLength(200)
+                .IsUnicode(false)
+                .HasColumnName("cliNome");
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.LceDataEmprestimo).HasColumnType("datetime");
+            entity.Property(e => e.LceDataEntrega).HasColumnType("datetime");
+            entity.Property(e => e.LivroNome)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("livroNome");
         });
 
         OnModelCreatingPartial(modelBuilder);
