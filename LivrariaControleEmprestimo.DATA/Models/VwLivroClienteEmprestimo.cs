@@ -27,5 +27,6 @@ public partial class VwLivroClienteEmprestimo
     [DisplayName("Data de Entrega")]
     public DateTime? LceDataEntrega { get; set; }
 
+    [DisplayName("Devolvido?")]
     public bool? LceEntregue { get; set; }
 }
