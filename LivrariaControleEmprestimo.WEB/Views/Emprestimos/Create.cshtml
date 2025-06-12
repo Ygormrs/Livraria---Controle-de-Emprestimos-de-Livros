@@ -1,5 +1,4 @@
-﻿@* @model LivrariaControleEmprestimo.DATA.Models.LivroClienteEmprestimo *@
-@model EmprestimoViewModel
+﻿@model EmprestimoViewModel
 
 @{
     ViewData["Title"] = "Create";
@@ -20,11 +19,11 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div hidden class="form-group">
-                <input asp-for="idCliente" class="form-control" />
+                <input id="idCliente" asp-for="idCliente" class="form-control" />
             </div>
 
             <div hidden class="form-group">
-                <input asp-for="idLivro" class="form-control" />
+                <input id="idLivro" asp-for="idLivro" class="form-control" />
             </div>
 
             <div class="card">
@@ -50,7 +49,7 @@
                         <tbody>
                             @foreach (var item in Model.oListCliente)
                             {
-                                <tr>
+                                <tr onclick="passIdCliente('@item.Id')">
                                     <td>
                                         @Html.DisplayFor(modelItem => item.CliCpf)
                                     </td>
@@ -96,7 +95,7 @@
                         <tbody>
                             @foreach (var item in Model.oListLivro)
                             {
-                                <tr>
+                                <tr onclick="passIdLivro('@item.Id')">
                                     <td>
                                         @Html.DisplayFor(modelItem => item.LivroNome)
                                     </td>
@@ -125,7 +124,7 @@
                     <div class="col-md">
                         <div class="form-group">
                             <label asp-for="dataEmprestimo" class="control-label"></label>
-                            <input asp-for="dataEmprestimo" class="form-control" />
+                            <input readonly="readonly" asp-for="dataEmprestimo" class="form-control" />
                             <span asp-validation-for="dataEmprestimo" class="text-danger"></span>
                         </div>
                     </div>
@@ -141,27 +140,11 @@
             </div>
             <br />
             <div class="form-group">
-                <input type="submit" value="Adicionar" class="btn btn-primary" />
+                <input type="submit" value="Incluir" class="btn btn-success">
             </div>
         </form>
     </div>
 </div>
-
-
-@* @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-    <script>
-        let table = new DataTable('#listClienteTable', {
-            language: { url: "//cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json" }
-        });
-        
-        let table2 = new DataTable('#listLivroTable', {
-            language: { url: "//cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json" }
-        });
-    </script>
-} *@
 
 @section Scripts {
     @{
@@ -187,10 +170,16 @@
             $('#listLivroTable tr.selected').removeClass('selected');
             $(this).addClass('selected');
         });
-    </script>
-    <style>
-        tr.selected {
-            background-color: #a1cdf1 !important; /* Cor azul clara, personalizável */
+
+        function passIdCliente(idCliente)
+        {
+            document.getElementById('idCliente').value = idCliente;
         }
-    </style>
-}
+
+        function passIdLivro(idLivro) 
+        {
+            document.getElementById('idLivro').value = idLivro;
+        }
+
+    </script>
+    }
