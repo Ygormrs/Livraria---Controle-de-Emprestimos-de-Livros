@@ -9,111 +9,159 @@
 
 <h4>LivroClienteEmprestimo</h4>
 <hr />
+
+<div>
+    <a class="btn btn-primary" asp-action="Index">Voltar</a>
+</div>
+<br />
 <div class="row">
     <div class="col-md">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <table id="listClienteTable" class="table">
-                <thead>
-                    <tr>
-                        <th>
-                            @Html.DisplayNameFor(model => model.oCliente.CliCpf)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.oCliente.CliNome)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.oCliente.CliTelefoneCelular)
-                        </th>
-                         <th>
-                            @Html.DisplayNameFor(model => model.oCliente.CliTelefoneFixo)
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model.oListCliente)
-                    {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.CliCpf)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.CliNome)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.CliTelefoneCelular)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.CliTelefoneFixo)
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-            <table id="listLivroTable" class="table2">
-                <thead>
-                    <tr>
-                        <th>
-                            @Html.DisplayNameFor(model => model.oLivro.LivroNome)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.oLivro.LivroAutor)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.oLivro.LivroEditora)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.oLivro.LivroAnoPublicacao)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.oLivro.LivroEdicao)
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model.oListLivro)
-                    {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.LivroNome)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.LivroAutor)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.LivroEditora)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.LivroAnoPublicacao)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.LivroEdicao)
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-            <div class="form-group">
-                <label asp-for="dataEmprestimo" class="control-label"></label>
-                <input asp-for="dataEmprestimo" class="form-control" />
-                <span asp-validation-for="dataEmprestimo" class="text-danger"></span>
+
+            <div hidden class="form-group">
+                <input asp-for="idCliente" class="form-control" />
             </div>
-            <div class="form-group">
-                <label asp-for="dataEntrega" class="control-label"></label>
-                <input asp-for="dataEntrega" class="form-control" />
-                <span asp-validation-for="dataEntrega" class="text-danger"></span>
+
+            <div hidden class="form-group">
+                <input asp-for="idLivro" class="form-control" />
             </div>
+
+            <div class="card">
+                <div class="card-header">Cliente</div>
+                <div class="card-body">
+                    <table id="listClienteTable" class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.oCliente.CliCpf)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.oCliente.CliNome)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.oCliente.CliTelefoneCelular)
+                                </th>
+                                 <th>
+                                    @Html.DisplayNameFor(model => model.oCliente.CliTelefoneFixo)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.oListCliente)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CliCpf)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CliNome)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CliTelefoneCelular)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CliTelefoneFixo)
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">Livros</div>
+                <div class="card-body">
+                    <table id="listLivroTable" class="table2">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.oLivro.LivroNome)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.oLivro.LivroAutor)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.oLivro.LivroEditora)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.oLivro.LivroAnoPublicacao)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.oLivro.LivroEdicao)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.oListLivro)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.LivroNome)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.LivroAutor)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.LivroEditora)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.LivroAnoPublicacao)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.LivroEdicao)
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">Datas</div>
+                <div class="card-body row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label asp-for="dataEmprestimo" class="control-label"></label>
+                            <input asp-for="dataEmprestimo" class="form-control" />
+                            <span asp-validation-for="dataEmprestimo" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="col-md row">
+                        <div class="form-group">
+                            <label asp-for="dataEntrega" class="control-label"></label>
+                            <input asp-for="dataEntrega" class="form-control" />
+                            <span asp-validation-for="dataEntrega" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Adicionar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a class="btn btn-primary" asp-action="Index">Voltar</a>
-</div>
 
+@* @section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        let table = new DataTable('#listClienteTable', {
+            language: { url: "//cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json" }
+        });
+        
+        let table2 = new DataTable('#listLivroTable', {
+            language: { url: "//cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json" }
+        });
+    </script>
+} *@
 
 @section Scripts {
     @{
@@ -123,8 +171,26 @@
         let table = new DataTable('#listClienteTable', {
             language: { url: "//cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json" }
         });
+
         let table2 = new DataTable('#listLivroTable', {
             language: { url: "//cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json" }
         });
+
+        // Seleção de linha única para #listClienteTable
+        $('#listClienteTable tbody').on('click', 'tr', function () {
+            $('#listClienteTable tr.selected').removeClass('selected');
+            $(this).addClass('selected');
+        });
+
+        // Seleção de linha única para #listLivroTable
+        $('#listLivroTable tbody').on('click', 'tr', function () {
+            $('#listLivroTable tr.selected').removeClass('selected');
+            $(this).addClass('selected');
+        });
     </script>
+    <style>
+        tr.selected {
+            background-color: #a1cdf1 !important; /* Cor azul clara, personalizável */
+        }
+    </style>
 }
