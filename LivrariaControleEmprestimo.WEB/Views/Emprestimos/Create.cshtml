@@ -1,146 +1,113 @@
 ﻿@model EmprestimoViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Novo Empréstimo";
 }
 
-<h1>Adicionar Emprestimos</h1>
-
-<h4>LivroClienteEmprestimo</h4>
-<hr />
+<h1 class="mt-4 mb-3 text-primary">
+    <i class="fas fa-book-reader"></i> Adicionar Empréstimo
+</h1>
 
 <div>
-    <a class="btn btn-primary" asp-action="Index">Voltar</a>
+    <a class="btn btn-outline-primary mb-4" asp-action="Index">
+        <i class="fas fa-arrow-left"></i> Voltar
+    </a>
 </div>
-<br />
+
 <div class="row">
     <div class="col-md">
         <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-            <div hidden class="form-group">
-                <input id="idCliente" asp-for="idCliente" class="form-control" />
-            </div>
+            <input id="idCliente" asp-for="idCliente" class="form-control" hidden />
+            <input id="idLivro" asp-for="idLivro" class="form-control" hidden />
 
-            <div hidden class="form-group">
-                <input id="idLivro" asp-for="idLivro" class="form-control" />
-            </div>
-
-            <div class="card">
-                <div class="card-header">Cliente</div>
-                <div class="card-body">
-                    <table id="listClienteTable" class="table">
-                        <thead>
+            <!-- Cliente -->
+            <div class="card shadow-sm border-primary mb-4">
+                <div class="card-header bg-primary text-white">
+                    <i class="fas fa-user"></i> Cliente
+                </div>
+                <div class="card-body p-3">
+                    <table id="listClienteTable" class="table table-hover">
+                        <thead class="table-light">
                             <tr>
-                                <th>
-                                    @Html.DisplayNameFor(model => model.oCliente.CliCpf)
-                                </th>
-                                <th>
-                                    @Html.DisplayNameFor(model => model.oCliente.CliNome)
-                                </th>
-                                <th>
-                                    @Html.DisplayNameFor(model => model.oCliente.CliTelefoneCelular)
-                                </th>
-                                 <th>
-                                    @Html.DisplayNameFor(model => model.oCliente.CliTelefoneFixo)
-                                </th>
+                                <th>@Html.DisplayNameFor(model => model.oCliente.CliCpf)</th>
+                                <th>@Html.DisplayNameFor(model => model.oCliente.CliNome)</th>
+                                <th>@Html.DisplayNameFor(model => model.oCliente.CliTelefoneCelular)</th>
+                                <th>@Html.DisplayNameFor(model => model.oCliente.CliTelefoneFixo)</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach (var item in Model.oListCliente)
                             {
                                 <tr onclick="passIdCliente('@item.Id')">
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.CliCpf)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.CliNome)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.CliTelefoneCelular)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.CliTelefoneFixo)
-                                    </td>
+                                    <td>@item.CliCpf</td>
+                                    <td>@item.CliNome</td>
+                                    <td>@item.CliTelefoneCelular</td>
+                                    <td>@item.CliTelefoneFixo</td>
                                 </tr>
                             }
                         </tbody>
                     </table>
                 </div>
             </div>
-            <br />
-            <div class="card">
-                <div class="card-header">Livros</div>
-                <div class="card-body">
-                    <table id="listLivroTable" class="table2">
-                        <thead>
+
+            <!-- Livro -->
+            <div class="card shadow-sm border-primary mb-4">
+                <div class="card-header bg-primary text-white">
+                    <i class="fas fa-book"></i> Livros
+                </div>
+                <div class="card-body p-3">
+                    <table id="listLivroTable" class="table table-hover">
+                        <thead class="table-light">
                             <tr>
-                                <th>
-                                    @Html.DisplayNameFor(model => model.oLivro.LivroNome)
-                                </th>
-                                <th>
-                                    @Html.DisplayNameFor(model => model.oLivro.LivroAutor)
-                                </th>
-                                <th>
-                                    @Html.DisplayNameFor(model => model.oLivro.LivroEditora)
-                                </th>
-                                <th>
-                                    @Html.DisplayNameFor(model => model.oLivro.LivroAnoPublicacao)
-                                </th>
-                                <th>
-                                    @Html.DisplayNameFor(model => model.oLivro.LivroEdicao)
-                                </th>
+                                <th>@Html.DisplayNameFor(model => model.oLivro.LivroNome)</th>
+                                <th>@Html.DisplayNameFor(model => model.oLivro.LivroAutor)</th>
+                                <th>@Html.DisplayNameFor(model => model.oLivro.LivroEditora)</th>
+                                <th>@Html.DisplayNameFor(model => model.oLivro.LivroAnoPublicacao)</th>
+                                <th>@Html.DisplayNameFor(model => model.oLivro.LivroEdicao)</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach (var item in Model.oListLivro)
                             {
                                 <tr onclick="passIdLivro('@item.Id')">
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.LivroNome)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.LivroAutor)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.LivroEditora)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.LivroAnoPublicacao)
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.LivroEdicao)
-                                    </td>
+                                    <td>@item.LivroNome</td>
+                                    <td>@item.LivroAutor</td>
+                                    <td>@item.LivroEditora</td>
+                                    <td>@item.LivroAnoPublicacao</td>
+                                    <td>@item.LivroEdicao</td>
                                 </tr>
                             }
                         </tbody>
                     </table>
                 </div>
             </div>
-            <br />
-            <div class="card">
-                <div class="card-header">Datas</div>
+
+            <!-- Datas -->
+            <div class="card shadow-sm border-primary mb-4">
+                <div class="card-header bg-primary text-white">
+                    <i class="fas fa-calendar-alt"></i> Datas
+                </div>
                 <div class="card-body row">
-                    <div class="col-md">
-                        <div class="form-group">
-                            <label asp-for="dataEmprestimo" class="control-label"></label>
-                            <input readonly="readonly" asp-for="dataEmprestimo" class="form-control" />
-                            <span asp-validation-for="dataEmprestimo" class="text-danger"></span>
-                        </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="dataEmprestimo" class="form-label"></label>
+                        <input readonly asp-for="dataEmprestimo" class="form-control" />
+                        <span asp-validation-for="dataEmprestimo" class="text-danger"></span>
                     </div>
-                    <br />
-                    <div class="col-md row">
-                        <div class="form-group">
-                            <label asp-for="dataEntrega" class="control-label"></label>
-                            <input asp-for="dataEntrega" class="form-control" />
-                            <span asp-validation-for="dataEntrega" class="text-danger"></span>
-                        </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="dataEntrega" class="form-label"></label>
+                        <input asp-for="dataEntrega" class="form-control" />
+                        <span asp-validation-for="dataEntrega" class="text-danger"></span>
                     </div>
                 </div>
             </div>
-            <br />
-            <div class="form-group">
-                <input type="submit" value="Incluir" class="btn btn-success">
+
+            <!-- Botão -->
+            <div class="form-group text-end">
+                <button type="submit" class="btn btn-success">
+                    <i class="fas fa-plus-circle"></i> Incluir Empréstimo
+                </button>
             </div>
         </form>
     </div>
@@ -150,6 +117,7 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+
     <script>
         let table = new DataTable('#listClienteTable', {
             language: { url: "//cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json" }
@@ -159,27 +127,22 @@
             language: { url: "//cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json" }
         });
 
-        // Seleção de linha única para #listClienteTable
         $('#listClienteTable tbody').on('click', 'tr', function () {
             $('#listClienteTable tr.selected').removeClass('selected');
             $(this).addClass('selected');
         });
 
-        // Seleção de linha única para #listLivroTable
         $('#listLivroTable tbody').on('click', 'tr', function () {
             $('#listLivroTable tr.selected').removeClass('selected');
             $(this).addClass('selected');
         });
 
-        function passIdCliente(idCliente)
-        {
+        function passIdCliente(idCliente) {
             document.getElementById('idCliente').value = idCliente;
         }
 
-        function passIdLivro(idLivro) 
-        {
+        function passIdLivro(idLivro) {
             document.getElementById('idLivro').value = idLivro;
         }
-
     </script>
-    }
+}

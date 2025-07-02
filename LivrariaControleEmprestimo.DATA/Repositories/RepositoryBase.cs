@@ -13,9 +13,9 @@ namespace LivrariaControleEmprestimo.DATA.Repositories
         protected ControleEmprestimoLivroContext _context;
         public bool _SaveChanges = true;
 
-        public RepositoryBase(bool saveChanches = true)
+        public RepositoryBase(bool saveChanges = true)
         {
-            _SaveChanges = saveChanches;
+            _SaveChanges = saveChanges;
             _context = new ControleEmprestimoLivroContext();
         }
 

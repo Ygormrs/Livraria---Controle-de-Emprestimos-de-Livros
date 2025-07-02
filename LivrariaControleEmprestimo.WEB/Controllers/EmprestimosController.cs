@@ -33,22 +33,56 @@ namespace LivrariaControleEmprestimo.WEB.Controllers
             return View(oEmprestimoViewModel);
         }
 
+        //[HttpPost]
+        //public IActionResult Create(EmprestimoViewModel oEmprestimoViewModel)
+        //{
+        //    LivroClienteEmprestimo oLivroClienteEmprestimo = new LivroClienteEmprestimo();
+        //    oLivroClienteEmprestimo.LceDataEmprestimo = oEmprestimoViewModel.dataEmprestimo;
+        //    oLivroClienteEmprestimo.LceDataEntrega = oEmprestimoViewModel.dataEntrega;
+        //    oLivroClienteEmprestimo.LceEntregue = false;
+        //    oLivroClienteEmprestimo.LceIdCliente = oEmprestimoViewModel.idCliente;
+        //    oLivroClienteEmprestimo.LceIdLivro = oEmprestimoViewModel.idLivro;
+
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return View();
+        //    }
+
+        //    _serviceEmprestimo.oRepositoryLivroClienteEmprestimo.Incluir(oLivroClienteEmprestimo);
+
+        //    return RedirectToAction("Index");
+        //}
         [HttpPost]
         public IActionResult Create(EmprestimoViewModel oEmprestimoViewModel)
         {
-            LivroClienteEmprestimo oLivroClienteEmprestimo = new LivroClienteEmprestimo();
-            oLivroClienteEmprestimo.LceDataEmprestimo = oEmprestimoViewModel.dataEmprestimo;
-            oLivroClienteEmprestimo.LceDataEntrega = oEmprestimoViewModel.dataEntrega;
-            oLivroClienteEmprestimo.LceEntregue = false;
-            oLivroClienteEmprestimo.LceIdCliente = oEmprestimoViewModel.idCliente;
-            oLivroClienteEmprestimo.LceIdLivro = oEmprestimoViewModel.idLivro;
-
             if (!ModelState.IsValid)
             {
-                return View();
+                oEmprestimoViewModel.oListCliente = _serviceEmprestimo.oRepositoryCliente.SelecionarTodos();
+                oEmprestimoViewModel.oListLivro = _serviceEmprestimo.oRepositoryLivro.SelecionarTodos();
+
+                return View(oEmprestimoViewModel);
             }
 
-            _serviceEmprestimo.oRepositoryLivroClienteEmprestimo.Incluir(oLivroClienteEmprestimo);
+            LivroClienteEmprestimo oLivroClienteEmprestimo = new LivroClienteEmprestimo
+            {
+                LceDataEmprestimo = oEmprestimoViewModel.dataEmprestimo,
+                LceDataEntrega = oEmprestimoViewModel.dataEntrega,
+                LceEntregue = false,
+                LceIdCliente = oEmprestimoViewModel.idCliente,
+                LceIdLivro = oEmprestimoViewModel.idLivro
+            };
+
+            try
+            {
+                _serviceEmprestimo.oRepositoryLivroClienteEmprestimo.Incluir(oLivroClienteEmprestimo);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao salvar no banco de dados: {ex.Message}");
+                // Opcional: Adicione uma mensagem de erro para o usuário
+                ModelState.AddModelError("", "Erro ao salvar no banco de dados.");
+                return View(oEmprestimoViewModel);
+            }
 
             return RedirectToAction("Index");
         }
